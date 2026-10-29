@@ -1,0 +1,101 @@
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+.comic-relief-regular {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.comic-relief-bold {
+  font-family: "Comic Relief", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+*{ --base: #6cbacf;
+  --borderColor: #3590F3;
+  --accentColors: #C2BBF0;
+  --cardColor: #8FB8ED;
+   color: rgb(58, 25, 134);
+
+    }
+
+    body{
+        background-image: url(css-pattern-by-magicpattern\ \(1\).png);
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    header{
+        background-color: #8FB8ED;
+        border: 2px solid var(--borderColor);
+        border-radius: 30px;
+        padding-bottom: 30px;
+        padding-top: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "Comic Relief", system-ui;
+    }
+
+ .title{
+        font-size: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        font-family: "gothic", system-ui;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .cards button{
+        background-color: var(--cardColor);
+        border: 2px solid var(--borderColor);
+        border-radius: 10px;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cards button:hover{
+        background-color: var(--accentColors);
+        transform: scale(1.05);
+    }
+    .FavoriteThings {
+        background-color: var(--cardColor);
+        border: 2px solid var(--borderColor);
+        border-radius: 10px;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        
+
+    .AboutMe {
+        background-color: var(--cardColor);
+        opacity: 0.9;
+        border: 0px solid var(--borderColor);
+        border-radius: 20px;
+        padding: 10px 10px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+}
