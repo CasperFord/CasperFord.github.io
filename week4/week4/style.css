@@ -4,28 +4,75 @@
 
 body {
   font-size: 1rem;
+  padding: 0px; 
+  margin: 0px;
+  background-color: black;
 }
 
 .flexCard {
+  position: fixed; 
+  top: 0px; 
+  left: 0px; 
   text-align: center;
-  width: 100px;
+  background-color: red;
+  width: 100vw;
   height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  color: rgb(156, 156, 156);
-  display: grid;
- 
+  color: rgb(247, 247, 247);
+  z-index: 10;
+
 }
- button {
+
+.flexCard > img{
+  height: 90px;
+  width: 90px; 
+  object-fit: cover; 
+}
+
+ .buttonClass {
   background-color: rgb(156, 156, 156);
   color: white;
   border: 2px solid rgb(37, 132, 156);
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;  }
+  margin: 4px 2px;}
+
+  .fixedCard{
+    position: absolute;
+    top: 200px;
+    width: 75%;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: white; 
+    display: grid; 
+    grid-template-columns: 50% 50%;
+    gap: 12px;
+  }
+
+  .fixedCard > div {
+    min-width: 300px;
+    background-color: chartreuse;
+    display: flex;
+    color: black; 
+    font-size: 2rem;
+
+  }
+
+@media screen and (max-width: 720px) { 
+  :root{
+    font-size: 20px;
+  }
+
+  .fixedCard{
+    display: grid; 
+    grid-template-rows: 50% 50%;
+  }
+
+  .fixedCard > div{
+    background-color: aqua;
+  }
+}
